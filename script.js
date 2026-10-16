@@ -56,11 +56,11 @@ const starChart = new Chart(document.getElementById('starChart'), {
         datasets: [{
             data: [5_210_000, 8_370_000, 9_030_000, 17_680_000, 62_610_000],
             backgroundColor: [
-                '#d9694f',
-                '#e39a4e',
-                '#e6c443',
-                '#9bc26a',
-                '#4f8a4a'
+                '#ff7a59',
+                '#ff9b3d',
+                '#ffc66b',
+                '#6fcf97',
+                '#4f9cf0'
             ],
             borderWidth: 0,
             borderRadius: 2,
@@ -111,11 +111,11 @@ const pieChart = new Chart(document.getElementById('pieChart'), {
         datasets: [{
             data: [5_210_000, 8_370_000, 9_030_000, 17_680_000, 62_610_000],
             backgroundColor: [
-                '#d9694f',
-                '#e39a4e',
-                '#e6c443',
-                '#9bc26a',
-                '#4f8a4a'
+                '#ff7a59',
+                '#ff9b3d',
+                '#ffc66b',
+                '#6fcf97',
+                '#4f9cf0'
             ],
 
             borderWidth: 1,
@@ -184,8 +184,8 @@ const errorChart = new Chart(
                     label: 'Train Accuracy',
                     data: trainData,
 
-                    borderColor: '#7fb86a',
-                    backgroundColor: rgba('#7fb86a', 0.10),
+                    borderColor: '#5aa9ff',
+                    backgroundColor: rgba('#5aa9ff', 0.12),
 
                     borderWidth: 1.5,
                     pointRadius: 2,
@@ -195,8 +195,8 @@ const errorChart = new Chart(
                 {
                     label: 'Validation Accuracy',
                     data: validationData,
-                    borderColor: '#e3bd3c',
-                    backgroundColor: rgba('#e3bd3c', 0.08),
+                    borderColor: '#ff9b3d',
+                    backgroundColor: rgba('#ff9b3d', 0.08),
                     borderWidth: 1.5,
                     pointRadius: 2,
                     tension: 0.4,
@@ -274,10 +274,10 @@ const featChart = new Chart(document.getElementById('featChart'), {
             label: 'Importance',
             data: featureImportances,
             backgroundColor: [
-                rgba('#e3bd3c', 0.92), rgba('#e3bd3c', 0.92),
-                rgba('#e3bd3c', 0.92), rgba('#e3bd3c', 0.92),
-                rgba('#e3bd3c', 0.92), rgba('#e3bd3c', 0.92),
-                rgba('#e3bd3c', 0.92), rgba('#e3bd3c', 0.92),
+                rgba('#2358bb', 0.92), rgba('#2358bb', 0.92),
+                rgba('#2358bb', 0.92), rgba('#2358bb', 0.92),
+                rgba('#2358bb', 0.92), rgba('#2358bb', 0.92),
+                rgba('#2358bb', 0.92), rgba('#2358bb', 0.92),
             ],
             borderWidth: 0,
             borderRadius: 2
