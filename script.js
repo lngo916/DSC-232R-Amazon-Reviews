@@ -1,4 +1,3 @@
-
 // ── Theme ────────────────────────────────────────────────
 const root = document.documentElement;
 const themeToggle = document.getElementById('themeToggle');
@@ -46,7 +45,7 @@ function rgba(hex, alpha) {
 const chartTheme = getChartTheme();
 Chart.defaults.color = chartTheme.muted;
 Chart.defaults.borderColor = chartTheme.line;
-Chart.defaults.font.family = "'DM Mono', monospace";
+Chart.defaults.font.family = "'Outfit', sans-serif";
 Chart.defaults.font.size = 10;
 
 // ── Star distribution bar chart ──
@@ -57,11 +56,11 @@ const starChart = new Chart(document.getElementById('starChart'), {
         datasets: [{
             data: [5_210_000, 8_370_000, 9_030_000, 17_680_000, 62_610_000],
             backgroundColor: [
-                '#f2504a',
-                '#f2994a',
-                '#f2c94c',
-                '#5488e9',
-                '#006702'
+                '#d9694f',
+                '#e39a4e',
+                '#e6c443',
+                '#9bc26a',
+                '#4f8a4a'
             ],
             borderWidth: 0,
             borderRadius: 2,
@@ -112,11 +111,11 @@ const pieChart = new Chart(document.getElementById('pieChart'), {
         datasets: [{
             data: [5_210_000, 8_370_000, 9_030_000, 17_680_000, 62_610_000],
             backgroundColor: [
-                '#f2504a',
-                '#f2994a',
-                '#f2c94c',
-                '#5488e9',
-                '#006702'
+                '#d9694f',
+                '#e39a4e',
+                '#e6c443',
+                '#9bc26a',
+                '#4f8a4a'
             ],
 
             borderWidth: 1,
@@ -185,8 +184,8 @@ const errorChart = new Chart(
                     label: 'Train Accuracy',
                     data: trainData,
 
-                    borderColor: '#0561bd',
-                    backgroundColor: rgba('#0373e2', 0.08),
+                    borderColor: '#7fb86a',
+                    backgroundColor: rgba('#7fb86a', 0.10),
 
                     borderWidth: 1.5,
                     pointRadius: 2,
@@ -196,8 +195,8 @@ const errorChart = new Chart(
                 {
                     label: 'Validation Accuracy',
                     data: validationData,
-                    borderColor: '#f78522',
-                    backgroundColor: rgba('#f47b11', 0.06),
+                    borderColor: '#e3bd3c',
+                    backgroundColor: rgba('#e3bd3c', 0.08),
                     borderWidth: 1.5,
                     pointRadius: 2,
                     tension: 0.4,
@@ -275,10 +274,10 @@ const featChart = new Chart(document.getElementById('featChart'), {
             label: 'Importance',
             data: featureImportances,
             backgroundColor: [
-                rgba('#3f9dfa', 0.90), rgba('#3f9dfa', 0.90),
-                rgba('#3f9dfa', 0.90), rgba('#3f9dfa', 0.90),
-                rgba('#3f9dfa', 0.90), rgba('#3f9dfa', 0.90),
-                rgba('#3f9dfa', 0.90), rgba('#3f9dfa', 0.90),
+                rgba('#e3bd3c', 0.92), rgba('#e3bd3c', 0.92),
+                rgba('#e3bd3c', 0.92), rgba('#e3bd3c', 0.92),
+                rgba('#e3bd3c', 0.92), rgba('#e3bd3c', 0.92),
+                rgba('#e3bd3c', 0.92), rgba('#e3bd3c', 0.92),
             ],
             borderWidth: 0,
             borderRadius: 2
@@ -803,7 +802,3 @@ themeToggle.addEventListener('click', () => {
     applyTheme(nextTheme);
     updateChartsForTheme();
 });
-
-
-
-
